@@ -8,9 +8,6 @@ export default async () => {
   const defaultLocale = locales[0]
 
   return {
-    // Target: https://go.nuxtjs.dev/config-target
-    target: 'server',
-
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
       title: 'Prismic + Nuxt i18n example',
