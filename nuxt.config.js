@@ -33,7 +33,7 @@ export default async () => {
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [
       '@nuxtjs/i18n',
-      /* Load Prismic module after i18n module to prevent extend route concurrency */ '@nuxtjs/prismic'
+      '@nuxtjs/prismic'
     ],
 
     build: {
