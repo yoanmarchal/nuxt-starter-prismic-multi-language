@@ -2,9 +2,8 @@
   <Component
     :is="as"
     :data-collapsible="collapsible || null"
-    class="px-6"
     :class="{
-      'py-8 md:py-10': yPadding === 'sm',
+      'py-0 md:py-0': yPadding === 'sm',
       'py-20 md:py-32': yPadding === 'base',
     }"
   >
