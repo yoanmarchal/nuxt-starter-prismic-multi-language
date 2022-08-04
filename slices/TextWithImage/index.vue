@@ -5,9 +5,9 @@
         <div class="absolute -top-6 -left-6 w-2/3">
           <div class="aspect-w-1 aspect-h-1 bg-slate-100/50" />
         </div>
-        <PrismicImage
+        <Pnuxt-img
           v-if="slice.primary.image.url"
-          :field="slice.primary.image"
+          :src="slice.primary.image"
           class="relative"
         />
       </div>

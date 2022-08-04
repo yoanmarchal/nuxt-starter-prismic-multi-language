@@ -33,6 +33,7 @@ export default async () => {
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [
       '@nuxtjs/i18n',
+      '@nuxt/image',
       '@nuxtjs/prismic'
     ],
 
@@ -67,6 +68,10 @@ export default async () => {
     i18n: {
       locales,
       defaultLocale
+    },
+
+    image: {
+      prismic: {}
     },
 
     prismic: {

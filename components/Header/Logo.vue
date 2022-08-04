@@ -14,11 +14,10 @@
   >
     <span class="sr-only">Home</span>
     <NuxtLink :to="localePath('/')">
-      <PrismicImage
-        v-if="settings.data.logo.url"
-        style="max-width: 150px; max-height: 100px"
-        :field="settings.data.logo"
-      />
+      <nuxt-img
+      v-if="settings.data.logo.url"
+      style="max-width: 150px; max-height: 100px"
+      provider="prismic" :src="settings.data.logo.url" />
     </NuxtLink>
   </a>
 </template>

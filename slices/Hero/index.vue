@@ -9,10 +9,13 @@
         class="max-w-2xl text-center leading-relaxed"
       />
       <PrismicLink v-if="slice.primary.buttonLink" :field="slice.primary.buttonLink">
-        <PrismicImage :field="slice.primary.buttonImage" />
+        <nuxt-img
+          v-if="slice.primary.buttonImage"
+          provider="prismic" :src="slice.primary.buttonImage.url" />
+        </NuxtLink>
       </PrismicLink>
       <div v-if="slice.primary.image.url" class="w-full">
-        <PrismicImage :field="slice.primary.image" />
+        <nuxt-img :src="slice.primary.image.url" />
       </div>
     </div>
   </Bounded>

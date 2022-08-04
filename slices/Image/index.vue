@@ -11,9 +11,9 @@
         <div class="aspect-w-1 aspect-h-1 bg-slate-200/50" />
       </div>
     </div>
-    <PrismicImage
+    <nuxt-img
       v-if="slice.primary.image.url"
-      :field="slice.primary.image"
+      :src="slice.primary.image.url"
       class="relative"
     />
   </Bounded>

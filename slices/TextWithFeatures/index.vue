@@ -2,9 +2,9 @@
   <Bounded :collapsible="false" as="section" class="bg-slate-100">
     <div class="grid grid-cols-1 items-end gap-10 md:grid-cols-2 md:gap-10 lg:gap-28">
       <div class="grid grid-cols-1 gap-8">
-        <PrismicImage
+        <nuxt-img
           v-if="slice.primary.icon.url"
-          :field="slice.primary.icon"
+          :src="slice.primary.icon.url"
           class="relative"
         />
         <PrismicRichText
